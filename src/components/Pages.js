@@ -18,13 +18,17 @@ class Pages extends Component{
             pages.push(i)
         }
         return(
-            <nav aria-label="Page navigation example">
+            <div className="ml-4">
+                            <nav aria-label="Page navigation example">
             <ul className="pagination">
                 {pages.map(page=> <li key ={page}
                  className={currentPage === page ? "page-item active": "page-item" } 
                  onClick={()=>onPage(page)}><a className="page-link">{page}</a></li>)}
             </ul>
           </nav>
+
+
+            </div>
 
         )
     }

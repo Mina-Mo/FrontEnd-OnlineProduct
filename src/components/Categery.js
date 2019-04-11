@@ -7,11 +7,11 @@ class Categery extends Component{
         // get props
         const {Categeries,OnCategery, selectedCategery} = this.props
         return(
-            <div className ="categery mx-auto" style={{width: "50%" }}>
-                <ul className="list-group list-group-horizontal">
-                    <li className={selectedCategery === "All Categeries" ? "list-group-item active": "list-group-item"} name="All Categeries" onClick={()=>OnCategery("All Categeries")}>All Categeries</li>
+            <div className ="categery">
+                <ul className="list-group list-group-horizontal row mx-auto" style={{width:"100%"}}>
+                    <li className={selectedCategery === "All Categeries" ? "list-group-item active col-md-2 offset-md-2": "list-group-item col-md-2 offset-md-2"} name="All Categeries" onClick={()=>OnCategery("All Categeries")}>All Categeries</li>
                     {Categeries.map(c=> <li key={c.id} 
-                    className={c.name === selectedCategery ? "list-group-item active": "list-group-item"}
+                    className={c.name === selectedCategery ? "list-group-item active col-md-2": "list-group-item col-md-2"}
                     onClick={()=>OnCategery(c.name)}>
                     {c.name}
                     </li>)}

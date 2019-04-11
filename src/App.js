@@ -35,7 +35,7 @@ class App extends Component {
   render() {
     if(this.state.isLoaded === false) return <p className="m-2">Loading...</p>
     return (
-      <React.Fragment>
+      <div>
       <NavBar user={this.state.user}/>
       <div>
         <Switch>
@@ -50,7 +50,7 @@ class App extends Component {
           <Redirect to="/NotFound"/>
         </Switch>
         </div>
-        </React.Fragment>
+        </div>
     )   
   }
 }

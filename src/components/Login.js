@@ -44,8 +44,8 @@ handleSubmit=async (e)=>{
     render(){
         const {data, errors} = this.state
         return(
-            <div className=" ml-3">
-                <h1 className="mt-2 mb-5">Log In</h1>
+            <div className="ml-3">
+                <h1 className="mt-2 mb-5 col-12">Log In</h1>
             <form onSubmit={this.handleSubmit}>
                 {this.inputRender("Email", "text", "Email", data.Email, errors)}
                 {this.inputRender("Password", "password", "Password", data.Password, errors)}

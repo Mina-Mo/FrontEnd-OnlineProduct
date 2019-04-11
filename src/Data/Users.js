@@ -6,7 +6,7 @@ import http from "../Service/http"
 
 // creating new user
 export function userRegisteration(user){
-return http.post("/users/signIn", {
+return http.post("/users/signUp", {
     Name: user.Name,
     Email: user.Email,
     Password: user.Password

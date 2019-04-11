@@ -4,7 +4,7 @@ import React from "react"
 
 function Welcome(){
     return(
-        <div className="pricing-header px-3 py-3 pt-md-0 pb-md-4 mx-auto text-center">
+        <div className="pricing-header px-3 py-3 pt-md-0 pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center-md-4 mx-auto text-center" style={{width:"100%"}}>
             <h1 className="display-4">Online Product World</h1>
             <p className="lead">Welcome to The Online Product World, where you will find everything you need related by laptops and mobiles hardwares.</p>
         </div>

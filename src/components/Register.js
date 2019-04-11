@@ -52,7 +52,7 @@ handleSubmit=async(e)=>{
         const {data, errors} = this.state
         return(
             <div className=" ml-3">
-                <h1 className="mt-2 mb-5">Registeration</h1>
+                <h1 className="mt-2 mb-5 ml-3">Registeration</h1>
             <form onSubmit={this.handleSubmit}>
 
             {/* rendering inputs using inputRender method */}
